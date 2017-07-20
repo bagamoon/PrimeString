@@ -10,6 +10,9 @@ namespace PrimeString
     {
         public bool PrimeString(string s)
         {
+            if (s.Substring(0, 2) == s.Substring(2, 2))
+                return false;
+            
             return true;
         }
     }
