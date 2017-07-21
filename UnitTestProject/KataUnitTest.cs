@@ -23,5 +23,11 @@ namespace UnitTestProject
             Assert.AreEqual(expected, kata.PrimeString(input));
         }
 
+        [TestCase("", true, TestName = "Input_Empty_String_Should_Return_True")]
+        public void BoundaryTest(string input, bool expected)
+        {
+            var kata = new Kata();
+            Assert.AreEqual(expected, kata.PrimeString(input));
+        }
     }
 }
