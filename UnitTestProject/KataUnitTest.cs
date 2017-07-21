@@ -25,6 +25,7 @@ namespace UnitTestProject
 
         [TestCase("", true, TestName = "Input_Empty_String_Should_Return_True")]
         [TestCase("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", false, TestName = "Input_Long_a-z_Concat_Should_Return_False")]
+        [TestCase("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyza", true, TestName = "Input_Long_a-z_Not_Concat_Should_Return_True")]
         public void BoundaryTest(string input, bool expected)
         {
             var kata = new Kata();
